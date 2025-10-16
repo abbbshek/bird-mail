@@ -1,4 +1,4 @@
-Bird Mail initial build
+﻿Bird Mail initial build
 
 Files and their functioning (plain text)
 
