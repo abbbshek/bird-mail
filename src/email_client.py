@@ -1,0 +1,18 @@
+class EmailClient:
+    def __init__(self, storage, inbox, sent, trash):
+        self.storage = storage
+        self.inbox = inbox
+        self.sent = sent
+        self.trash = trash
+
+    def compose_email(self, from_addr, to_addr, subject, body):
+        pass
+
+    def read_inbox(self):
+        pass
+
+    def delete_email(self, folder, message_id):
+        pass
+
+    def mark_as_read(self, folder, message_id):
+        pass

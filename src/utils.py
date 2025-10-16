@@ -1,0 +1,14 @@
+import uuid
+from datetime import datetime
+
+def generate_id():
+
+    return str(uuid.uuid4())
+
+def get_timestamp():
+    
+    return datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
+def message_summary(message):
+    
+    return f"ID: {message.id} | From: {message.from_addr} | To: {message.to_addr} | Subject: {message.subject} | Read: {message.read}"

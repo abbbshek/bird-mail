@@ -1,0 +1,13 @@
+class Folder:
+    def __init__(self, name, messages=None):
+        self.name = name
+        self.messages = messages or []
+
+    def add_message(self, message):
+        pass
+
+    def remove_message(self, message_id):
+        pass
+
+    def list_messages(self):
+        pass

@@ -1,0 +1,18 @@
+class Message:
+    def __init__(self, from_addr, to_addr, subject, body, timestamp, read=False, labels=None):
+        self.from_addr = from_addr
+        self.to_addr = to_addr
+        self.subject = subject
+        self.body = body
+        self.timestamp = timestamp
+        self.read = read
+        self.labels = labels or []
+
+    def mark_read(self):
+        pass
+
+    def mark_unread(self):
+        pass
+
+    def display_summary(self):
+        pass

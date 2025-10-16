@@ -1,0 +1,9 @@
+class FileStorage:
+    def __init__(self, data_path):
+        self.data_path = data_path
+
+    def load(self, folder_name):
+        pass
+
+    def save(self, folder_name, messages):
+        pass
