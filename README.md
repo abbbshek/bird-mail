@@ -1,1 +1,1 @@
-﻿Bird Mail is an email app in building
+﻿Bird Mail is an email app
