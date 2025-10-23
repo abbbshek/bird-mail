@@ -1,3 +1,5 @@
+# Defines the Message class and its methods
+
 from utils import generate_id
 
 class Message:
@@ -11,20 +13,24 @@ class Message:
         self.read = read
         self.labels = labels or []
 
+    # Marks the message as read
     def mark_read(self):
         self.read = True
 
+    # Marks the message as unread
     def mark_unread(self):
         self.read = False
 
+    # Displays the summary of the message
     def display_summary(self):
         return (
-            f"Subject: {self.subject}\n"
-            f"Sender: {self.from_addr}\n"
-            f"Time: {self.timestamp}\n"
-            f"Read: {self.read}"
+            f"Subject: {self.subject} " 
+            f"Sender: {self.from_addr} "
+            f"Time: {self.timestamp} "
+            f"Read: {self.read} "
         )
     
+    # Converts the message to dictionary format to be saved in a folder
     def to_dict(self):
         return {
             "id": self.id,
@@ -37,15 +43,16 @@ class Message:
             "labels": self.labels,
         }
     
+    # Converts the dictionary format data from the storage to a message object for displaying. 
     @classmethod 
-    def from_dict(cls, d):
+    def from_dict(cls, data):
         return cls(
-            from_addr=d.get("from_addr"),
-            to_addr=d.get("to_addr"),
-            subject=d.get("subject"),
-            body=d.get("body"),
-            timestamp=d.get("timestamp"),
-            read=d.get("read", False),
-            labels=d.get("labels", []),
-            id=d.get("id"),
+            from_addr=data.get("from_addr"),
+            to_addr=data.get("to_addr"),
+            subject=data.get("subject"),
+            body=data.get("body"),
+            timestamp=data.get("timestamp"),
+            read=data.get("read", False),
+            labels=data.get("labels", []),
+            id=data.get("id"),
         )
