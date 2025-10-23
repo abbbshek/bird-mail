@@ -2,6 +2,7 @@
 
 from message import Message
 
+
 class Folder:
     # Initializes the folder with a name and a list of messages
     def __init__(self, name, messages=None):
