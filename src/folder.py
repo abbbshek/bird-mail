@@ -1,6 +1,6 @@
 # Defines the Folder class and its methods
 
-from message import Message
+from src.message import Message
 
 
 class Folder:
