@@ -1,8 +1,8 @@
 ﻿# BirdMail is an email app
 
-The core intention was to apply and practice python OOP 
+The core intention was to apply and practice Python OOP 
 
-##Features
+## Features
 
 - **Message Management**: Create, read, delete and mark emails as read
 - **Folder System**: Inbox, Sent and Trash folders
