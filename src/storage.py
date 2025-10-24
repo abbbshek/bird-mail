@@ -2,7 +2,7 @@
 
 import json
 import os
-from message import Message
+from src.message import Message
 
 
 # handles the storage of messages in JSON files

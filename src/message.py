@@ -1,6 +1,6 @@
 # Defines the Message class and its methods
 
-from utils import generate_id
+from src.utils import generate_id
 
 class Message:
     def __init__(self, from_addr, to_addr, subject, body, timestamp, read=False, labels=None, id=None):
